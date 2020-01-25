@@ -1,0 +1,45 @@
+.m-main-nav,
+.o-main-header,
+.o-search-bar,
+.m-heads-up-banner,
+.comments-container,
+.stepcontent_navigation,
+.video-container,
+.a-skip-link,
+.m-page-footer__primary-nav,
+.a-section.m-page-footer__secondary-nav,
+.m-page-footer__core,
+hr {
+  display: none;
+}
+
+body {
+  background: none;
+  color: #000000;
+}
+
+img {
+  max-width: 25%;
+}
+
+.m-page-footer:after {
+  margin-top: 1em;
+  display: inline-block;
+  width: 100%;
+  font-style: italic;
+  font-size: 0.8em;
+  content: "Our website is updated regularly so this content may now be out of date, please go to https://www.futurelearn.com for the most up to date information.";
+}
+
+#fl-canvas {
+  background: #ffffff;
+}
+
+img[src*="/assets/image_placeholder"],
+svg {
+  display: none;
+}
+
+.u-hidden-print {
+  display: none !important;
+}

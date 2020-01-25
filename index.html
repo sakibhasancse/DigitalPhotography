@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Demo Site </title>
+    <meta content="." name="description" />
+    <meta content="" property="og:title" />
+    <meta content="." property="og:description" />
+    <meta content="" property="og:image" />
+    <meta content="summary" name="twitter:card" />
+    <link rel="preload" href="./assate/css/application.css" as="style" />
+    <link rel="preload" href="./assate/css/fonts/euro.css" as="style" />
+
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+
+    <link href="./assate/css/style.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" media="screen, projection" href="./assate/css/application.css" />
+    <link rel="stylesheet" media="print" href="./assate/css/print.css" />
+
+    <script type="text/javascript">
+        WebFont.load({
+            google: {
+                families: ["Inconsolata:400,700", "PT Serif:400,400italic,700,700italic", "Poppins:300,regular,600,700"]
+            }
+        });
+    </script>
+    <script src="../use.typekit.net/hgf6mds.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        try {
+            Typekit.load();
+        } catch (e) {}
+    </script>
+
+
+    <style>
+        body {
+            text-rendering: geometricPrecision;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .price__text,
+        .nav__link__link.nav__link__link--login {
+            white-space: nowrap;
+        }
+        
+        .img--object-fit {
+            object-fit: cover;
+        }
+        
+        html {
+            opacity: 0;
+            transition: opacity 0s ease-out;
+        }
+        
+        html.webflow-loaded {
+            opacity: 1;
+        }
+    </style>
+
+    <script>
+        var Webflow = Webflow || [];
+        Webflow.push(function() {
+            $('html').addClass('webflow-loaded')
+        });
+    </script>
+    <style>
+        .w-slider-nav {
+            padding-top: 0px;
+        }
+        
+        .w-slider-dot {
+            background-color: rgba(255, 255, 255, 0);
+            margin: 0px 0px 0px 0px;
+            opacity: 0.6;
+            transform: scale(0.67, 0.67);
+            transition: transform 300ms, opacity 300ms;
+            width: 20%;
+        }
+        
+        .w-slider-dot.w-active {
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 0;
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+        
+        .w-slider-nav.w-round>div {
+            border-radius: 0px;
+        }
+        
+        @media (max-width: 767px) {
+            .w-slider-dot {}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="site">
+        <div style="opacity:1;display:block" class="site--overlay"></div>
+        <div data-collapse="medium" data-animation="default" data-duration="400" data-w-id="9f0f87df-b7d0-1e56-6768-80d95754154b" class="nav w-nav">
+            <div class="nav__bg"></div>
+            <div class="nav__body">
+                <div class="container-fluid " style="padding-left: 20px ;padding-right: 20px;">
+                    <div class="nav__body__content style=">
+                        <a href="index.html" class="nav__brand w-inline-block w--current " style="width: 196px;"><img src="./assate/5d2cbb53b1d789872b48f552_dubsado-logo-nav-min.png" width="196" alt="" /></a>
+                        <div class="nav__menu">
+                            <div class="nav__menu__public">
+                                <div class="nav__link">
+                                    <a href="pricing.html" class="nav__link__link nav__link__link--public w-inline-block">
+                                        <div class="trigger__linkmove">
+                                            <div>Pricing</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="nav__link">
+                                    <div data-w-id="9f0f87df-b7d0-1e56-6768-80d95754155a" class="nav__dropdown">
+                                        <div data-w-id="a63c1dad-6a26-8e3e-b99d-91d525c36013" class="nav__dropdown__header">
+                                            <div class="nav__dropdown__heading__title">
+                                                <div class="nav__dropdown__heading__arrow">
+                                                    <div class="trigger__linkmove"><img src="https://uploads-ssl.webflow.com/5d2cbb53b1d7890c7748f4c7/5d2cbb53b1d789503548f56a_ico-dropdwon-arrow.svg" alt="" class="nav__dropdown__heading__arrow__img" /></div>
+                                                </div>
+                                                <div class="trigger__linkmove">
+                                                    <div>Features</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div data-w-id="9f0f87df-b7d0-1e56-6768-80d957541563" class="nav__dropdown__body">
+                                            <div class="dropdownlist">
+                                                <div class="dropdownlist__back">
+                                                    <div class="resetlinehieght"><a href="#" class="link link--alt link--alt--nav w-button">Back</a></div>
+                                                </div>
+                                                <a href="features/client-management.html" class="dropdownlist__item w-inline-block">
+                                                    <div class="nav__list__icon">
+                                                        <div class="nav__icon">
+                                                            <div class="nav__icon__icon"><img src="./assate/5d2cbb53b1d789e01148f5a2_ico-nav-client-management-min.png" width="18" alt="" /></div>
+                                                            <div class="nav__icon__blob nav__icon__blob--light"><img src="https://uploads-ssl.webflow.com/5d2cbb53b1d7890c7748f4c7/5d2cbb53b1d789143f48f566_blob-nav-client-management-light.svg" alt="" /></div>
+                                                            <div class="nav__icon__blob nav__icon__blob--dark"><img src="https://uploads-ssl.webflow.com/5d2cbb53b1d7890c7748f4c7/5d2cbb53b1d78921c748f564_blob-nav-client-management-dark.svg" alt="" /></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav__list__body">
+                                                        <div class="nav__list__body__title">Client Management</div>
+                                                        <div class="nav__list__body__text">Manage your clients and create projects to keep everything in one place.</div>
+                                                    </div>
+                                                </a>
+                                                <a href="features/contracts-forms.html" class="dropdownlist__item w-inline-block">
+                                                    <div class="nav__list__icon">
+                                                        <div class="nav__icon">
+                                                            <div class="nav__icon__icon"><img src="./assate/5d2cbb53b1d78998a348f55a_ico-nav-contract-forms-min.png" width="14" alt="" /></div>
+                                                            <div class="nav__icon__blob nav__icon__blob--light"><img src="https://uploads-ssl.webflow.com/5d2cbb53b1d7890c7748f4c7/5d2cbb53b1d78908e548f577_blob-nav-contract-forms-light.svg" alt="" /></div>
+                                                            <div class="nav__icon__blob nav__icon__blob--dark"><img src="https://uploads-ssl.webflow.com/5d2cbb53b1d7890c7748f4c7/5d2cbb53b1d789625d48f569_blob-nav-contract-forms-dark.svg" alt="" /></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav__list__body">
+                                                        <div class="nav__list__body__title">Contracts &amp; Forms</div>
+                                                        <div class="nav__list__body__text">Create forms and contracts custom branded to your business.</div>
+                                                    </div>
+                                                </a>
+                                                <a href="features/automation.html" class="dropdownlist__item w-inline-block">
+                                                    <div class="nav__list__icon">
+                                                        <div class="nav__icon">
+                                                            <div class="nav__icon__icon"><img src="./assate/5d2cbb53b1d789570948f5a1_ico-nav-automation-min.png" width="16" alt="" /></div>
+                                                            <div class="nav__icon__blob nav__icon__blob--light"><img src="https://uploads-ssl.webflow.com/5d2cbb53b1d7890c7748f4c7/5d2cbb53b1d78968dd48f559_blob-nav-automation-light.svg" alt="" /></div>
+                                                            <div class="nav__icon__blob nav__icon__blob--dark"><img src="https://uploads-ssl.webflow.com/5d2cbb53b1d7890c7748f4c7/5d2cbb53b1d789e92948f56c_blob-nav-automation-dark.svg" alt="" /></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav__list__body">
+                                                        <div class="nav__list__body__title">Automation</div>
+                                                        <div class="nav__list__body__text">Get more done in less time with automated workflows.</div>
+                                                    </div>
+                                                </a>
+                                                <a href="features/get-paid.html" class="dropdownlist__item w-inline-block">
+                                                    <div class="nav__list__icon">
+                                                        <div class="nav__icon">
+                                                            <div class="nav__icon__icon"><img src="./assate/5d2cbb53b1d789618048f56d_ico-nav-get-paid-min.png" width="18" alt="" /></div>
+                                                            <div class="nav__icon__blob nav__icon__blob--light"><img src="https://uploads-ssl.webflow.com/5d2cbb53b1d7890c7748f4c7/5d2cbb53b1d7890bdb48f557_blob-nav-get-paid-light.svg" alt="" /></div>
+                                                            <div class="nav__icon__blob nav__icon__blob--dark"><img src="https://uploads-ssl.webflow.com/5d2cbb53b1d7890c7748f4c7/5d2cbb53b1d789ec7248f56e_blob-nav-get-paid-dark.svg" alt="" /></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav__list__body">
+                                                        <div class="nav__list__body__title">Get Paid</div>
+                                                        <div class="nav__list__body__text">Send invoices easily and use payment schedules to keep your clients on track.</div>
+                                                    </div>
+                                                </a>
+                                                <a href="features/scheduling.html" class="dropdownlist__item w-inline-block">
+                                                    <div class="nav__list__icon">
+                                                        <div class="nav__icon">
+                                                            <div class="nav__icon__icon"><img src="./assate/5d2cbb53b1d7892d8348f562_ico-nav-scheduler-min.png" width="18" alt="" /></div>
+                                                            <div class="nav__icon__blob nav__icon__blob--light"><img src="https://uploads-ssl.webflow.com/5d2cbb53b1d7890c7748f4c7/5d2cbb53b1d7898a8c48f567_blob-nav-scheduler-light.svg" alt="" /></div>
+                                                            <div class="nav__icon__blob nav__icon__blob--dark"><img src="https://uploads-ssl.webflow.com/5d2cbb53b1d7890c7748f4c7/5d2cbb53b1d789384948f5a5_blob-nav-scheduler-dark.svg" alt="" /></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav__list__body">
+                                                        <div class="nav__list__body__title">Scheduling</div>
+                                                        <div class="nav__list__body__text">Book appointments without the back and forth.</div>
+                                                    </div>
+                                                </a>
+                                                <a href="features/accounting-reporting.html" class="dropdownlist__item w-inline-block">
+                                                    <div class="nav__list__icon">
+                                                        <div class="nav__icon">
+                                                            <div class="nav__icon__icon"><img src="./assate/5d2cbb53b1d78949e948f576_ico-nav-accoiunting-reporting-min.png" width="22" alt="" /></div>
+                                                            <div class="nav__icon__blob nav__icon__blob--light"><img src="https://uploads-ssl.webflow.com/5d2cbb53b1d7890c7748f4c7/5d2cbb53b1d78922be48f5a0_blob-nav-accounting-reporting-light.svg" alt="" /></div>
+                                                            <div class="nav__icon__blob nav__icon__blob--dark"><img src="https://uploads-ssl.webflow.com/5d2cbb53b1d7890c7748f4c7/5d2cbb53b1d789449548f555_blob-nav-accounting-reporting-dark.svg" alt="" /></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nav__list__body">
+                                                        <div class="nav__list__body__title">Accounting &amp; Reporting</div>
+                                                        <div class="nav__list__body__text">Stay up-to-date on your finances and track lead generation metrics.</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nav__link">
+                                    <a href="team.html" class="nav__link__link nav__link__link--public w-inline-block">
+                                        <div class="trigger__linkmove">
+                                            <div>About</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="nav__link">
+                                    <a href="blog.html" class="nav__link__link nav__link__link--public w-inline-block">
+                                        <div class="trigger__linkmove">
+                                            <div>Blog</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="nav__link">
+                                    <a href="contact.html" class="nav__link__link nav__link__link--public w-inline-block">
+                                        <div class="trigger__linkmove">
+                                            <div>Contact</div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="nav__menu__users">
+                                <div class="nav__link">
+                                    <a href="https://hello.dubsado.com/" class="nav__link__link nav__link__link--login w-inline-block">
+                                        <div class="trigger__linkmove">
+                                            <div>Log in</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="nav__link nav__link--button">
+                                    <div class="trigger__linkmove"><a href="https://hello.dubsado.com/user/signup" class="btn btn--nav btn--shadow w-button">Start a free trial</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div data-w-id="9f0f87df-b7d0-1e56-6768-80d9575415d6" class="nav__button nav__button--open w-nav-button">
+                    <div class="nav__button__iconnative w-icon-nav-menu"></div>
+                    <div class="navbar__button__topline">
+                        <div class="navbar__button__line"></div>
+                    </div>
+                    <div class="navbar__button__midline">
+                        <div class="navbar__button__line"></div>
+                    </div>
+                    <div class="navbar__button__bottomline">
+                        <div class="navbar__button__line"></div>
+                    </div>
+                </div>
+                <div data-w-id="9f0f87df-b7d0-1e56-6768-80d9575415de" class="nav__button nav__button--close w-nav-button">
+                    <div class="nav__button__iconnative w-icon-nav-menu"></div>
+                    <div class="navbar__button__topline">
+                        <div class="navbar__button__line"></div>
+                    </div>
+                    <div class="navbar__button__midline">
+                        <div class="navbar__button__line"></div>
+                    </div>
+                    <div class="navbar__button__bottomline">
+                        <div class="navbar__button__line"></div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class='full-width-wrapper' id='main-content' lang='en' role='main' tabindex='-1'>
+        <div class='m-billboard-new m-billboard-new--defy-expectations-promo' id=''>
+            <div class='m-billboard-new__background'></div>
+            <section class='a-section'>
+                <div class='a-content a-content--hall a-content--tight'>
+                    <div class='m-billboard-new__container'>
+                        <div class='m-billboard-new__content'>
+                            <div>
+                                <h1 class='a-item-title'>
+                                    Join online courses and learn new skills
+                                </h1>
+                                <h2 class='a-heading a-heading--large'>
+                                    Defy Expectations
+                                </h2>
+                                <p>
+                                    Who says you can’t do it? Build the confidence, skills, and qualifications to take control of your future.
+                                </p>
+                                <div class='m-button-group m-button-group--elastic'>
+                                    <span class='m-button-group__button'>
+            <a class="a-button a-button--boss a-button--elastic" href="courses/collections/defy-expectations.html">Find out more</a>
+            </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <a name='campaign-banner'></a>
+        <div class='m-billboard-new m-billboard-new--split'>
+            <div class='m-billboard-new__slot m-billboard-new__slot--left' style='background-image: url(./assate/uploads/homepage/cover1ist.jpg)'>
+                <div class='a-section m-billboard-new__split-section'>
+                    <div class='a-content a-content--hall a-content--tight m-billboard-new__split-content'>
+                        <div class='m-billboard-new__content'>
+                            <div class='headline'>POPULAR TOPIC</div>
+                            <h3 style="color: white;" class='u-regular u-no-margin-top'>
+                                Healthcare courses
+                            </h3>
+                            <div class='m-billboard-new__buttons'>
+                                <a class='a-button a-button--ghost a-button--ghost--inverse js-ahoy-track' data-ahoy-event-properties='{&quot;campaign_banner_id&quot;:59,&quot;position&quot;:&quot;left&quot;,&quot;click-event-name&quot;:&quot;homepage_campaign_banner&quot;}' data-ahoy-event='$click'
+                                    href='subjects/healthcare-medicine-courses/healthcare.html'>
+            View courses
+            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class='m-billboard-new__slot m-billboard-new__slot--right' style='background-image: url(./assate/uploads/homepage/coversecond.jpg)'>
+                <div class='a-section m-billboard-new__split-section'>
+                    <div class='a-content a-content--hall a-content--tight m-billboard-new__split-content'>
+                        <div class='m-billboard-new__content'>
+                            <div class='headline'>New Microcredential</div>
+                            <h3 style="color: white;" class='u-regular u-no-margin-top'>
+                                Digital Photography: Creating a Professional Portfolio
+                            </h3>
+                            <div class='m-billboard-new__buttons'>
+                                <a class='a-button a-button--ghost a-button--ghost--inverse js-ahoy-track' data-ahoy-event-properties='{&quot;campaign_banner_id&quot;:126,&quot;position&quot;:&quot;right&quot;,&quot;click-event-name&quot;:&quot;homepage_campaign_banner&quot;}' data-ahoy-event='$click'
+                                    href='microcredentials/digital-photography.html'>
+            Find out more
+            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./assate/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./assate/js/webflow.8cb806fd8.js" type="text/javascript"></script>
+
+
+    <script>
+        window.intercomSettings = {
+            app_id: "zheb3qar"
+        };
+    </script>
+
+
+</body>
+
+</html>
